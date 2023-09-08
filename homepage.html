@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="homepage design your life">
+    <title>design your life Campaign</title>
+    <!-- Add Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        color:black;
+      }
+      /* CSS to set the background image */
+      .container-with-bg {
+        background-image: url("bgd2.jpg"); /* Replace 'background.jpg' with your background image file path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Add some padding to the container */
+      }
+
+      .bgd1 {
+        background-image: url("final.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 400px;
+        width: 100%;
+        /* HTML structure */
+
+        background-color: rgba(
+          255,
+          255,
+          255,  
+          0.5
+        ); /* Adjust the last value (0.5) for opacity */
+        backdrop-filter: blur(
+          10px
+        ); /* Adds a blur effect to mimic frosted glass */
+        padding: 20px;
+      }
+      /* CSS to display description on top of the image */
+      .card-img-overlay {
+        background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+        color: white; /* Set text color to white */
+        padding: 10px; /* Add some padding to the overlay */
+        position: absolute; /* Position the overlay on top of the image */
+        bottom: 0; /* Align the overlay to the bottom of the image */
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Make the overlay span the entire width of the card */
+        text-align: start; /* Center-align the text */
+        justify-content: start;
+        align-items: center;
+      }
+      /* CSS to reduce the size of the image */
+
+      .navbar .navbar-toggler .nav-link {
+        color: purple;
+      }
+
+      .col-9 {
+        margin-top: 40px;
+      }
+      .p {
+        color: rgb(106, 32, 176);
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .card {
+      }
+      /* Custom CSS for styling */
+      .team-card {
+        margin-bottom: 20px;
+      }
+
+      /* Adjust card title and text styles as needed */
+      .card-title {
+        font-size: 18px;
+      }
+
+      .card-text {
+        margin-top: 15px;
+        display: block;
+        font-size: 10px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      /* CSS to set the background image */
+
+      /* CSS to reduce the size of the image */
+      .card-img-top {
+        display: block; /* Center the image horizontally */
+        transition: transform 1s;
+      }
+
+      /* CSS for the image flip effect on hover */
+      .card:hover #con1 {
+        transform: rotateY(
+          180deg
+        ); /* Rotate the image horizontally by 180 degrees on hover */
+      }
+      .card:hover #con2 {
+        transform: rotateX(
+          360deg
+        ); /* Rotate the image horizontally by 180 degrees on hover */
+      }
+      .col-md-6 {
+        border: none;
+        background-color: transparent;
+        margin-top: 40px;
+      }
+
+      /* Custom CSS for styling */
+      .header-text {
+        font-size: 36px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: consolas;
+        margin: 30px 0;
+        position: relative;
+        color: purple;
+      }
+
+      /* Line color */
+
+      .header-emoji {
+        font-size: 48px;
+        color: purple;
+      }
+      .img-thumbnail {
+        position: relative;
+      }
+      .texti {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        text-align: center;
+        color: white;
+        bottom: 10;
+        margin-bottom: 100px;
+        height: 50px;
+        font-size: 20px;
+        border: 5px solid white;
+      }
+
+      /* Style for smaller images */
+
+      .scrollable-footer {
+        background-color: white;
+        color: white;
+        padding: 20px 0;
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+      }
+
+      .scrollable-footer img {
+        max-width: 100%;
+        height: 700;
+        margin-right: 20px; /* Add some space between images */
+      }
+      .modal-title{
+        color: rgb(106, 32, 176);
+      }
+      .modal-body{
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-purple"
+      style="color: purple"
+    >
+      <a class="navbar-brand" href="about.html"
+        ><img src="logo.ico" alt="" style="height: 80px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="color: green;"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="homepage.html"
+             style="color: rgb(106, 32, 176);" >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: green;">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color:orange">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bgd1">
+      <img src="profiles/logo.png" style="height: 200px" alt="" />
+      
+    </div>
+
+    <div class="container-fluid container-with-bg">
+      <!-- Add 'container-fluid' for full-width background -->
+      <div
+        class="row"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <!-- Container 1 -->
+        <div class="col-9">
+          <div class="card">
+            <img
+              src="1.jpg"
+              class="card-img-top"
+              alt="Image 1"
+              style="object-fit: contain"
+              id="con1"
+            />
+            <div class="card-img-overlay">
+              <h4>Design your life</h4>
+              <p class="card-text" style="margin-top: 10px">
+                "Design Your Life Campaign, an NGO, teaches partners a simple
+                system for generating passive income to quickly fund projects
+                and financial goals, without selling, borrowing, or wasting
+                time."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container 2 -->
+        <div class="col-9">
+          <div class="card">
+            <img src="mission.jpg" class="card-img-top" alt="Image 2" id="con2" />
+            <div class="card-img-overlay">
+              <h4>Our Mission:</h4>
+              <p class="card-text">
+                To create self-made multi-millionaires with beautiful lifestyle
+                through the connected economy
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container 3 -->
+        <div class="col-9">
+          <div class="card">
+            <img
+              src="vision.jpg"
+              class="card-img-top"
+              alt="Image 3"
+              id="con1"
+            />
+            <div class="card-img-overlay">
+              <h4>Our Vision:</h4>
+
+              <p class="card-text">
+                To become the leading institution that produces professional and
+                world class ambassadors of financial freedom in the connected
+                economy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <!-- Container 4 -->
+        <div class="col-9">
+          <div class="card">
+            <img
+              src="goal.jpg"
+              class="card-img-top"
+              alt="Image 4"
+              id="con2"
+            />
+            <div class="card-img-overlay">
+              <h4>Our Goal:</h4>
+
+              <p class="card-text">
+                To create 10,000+ self-made millionaires by 2025
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container 5 -->
+        <div class="col-9">
+          <div class="card">
+            <img
+              src="pexels-max-rahubovskiy-7534213.jpg"
+              class="card-img-top"
+              alt="Image 5"
+              id="con1"
+            />
+            <div class="card-img-overlay">
+            <h4>Members:</h4>
+
+              <p class="card-text">50k+ members worldwide <br>
+                15k cooperate members 
+                
+                </p>
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid container-with-bg mt-4"
+      style="background-image: url(final.jpg)"
+    >
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item" 
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-center">
+            <h2>More Info</h2>
+            <p>
+              Are you passionate about making a positive impact on society? At
+              DESIGN YOUR LIFE CAMPAIGN, we believe in the power of collective
+              action to create lasting change. Here's how you can participate in
+              philanthropic activities and give back to society by partnering
+              with our organization
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid container-with-bg text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="header-text">
+            Meet <span style="color: rgb(219, 60, 29)">our</span> Team
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid container-with-bg">
+      <div class="row mx-auto">
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-4">
+          <img
+            src="profiles/p1.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal1"
+          />
+          <p class="texti">Ango Saliu Dare</p>
+        </div>
+
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ango saliu Dare</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+
+                A
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-4">
+          <img
+            src="profiles/p2.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            style="position: relative; border: orange"
+            data-toggle="modal"
+            data-target="#myModal2"
+          />
+          <p class="texti">Taiwo Olasehinde</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Taiwo Olasehinde</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                2
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-4">
+          <img
+            src="profiles/p3.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            style="position: relative"
+            data-toggle="modal"
+            data-target="#myModal3"
+          />
+          <p class="texti">Ango Rofiat</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ango Rofiat</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                3
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-4">
+          <img
+            src="profiles/p4.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            style="position: relative"
+            data-target="#myModal4"
+          />
+          <p class="texti">Adeola Tunrayo Sherifat</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Adeola Tunrayo sherifat</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+              </div>
+              4
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p5.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal5"
+          />
+          <p class="texti">Adam Olanrewaju Onagun</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Adam Olanrewaju onagun</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+              </div>
+              5
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p6.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal6"
+          />
+          <p class="texti">Ango Muhammed Nuhu</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ango Muhammed Nuhu</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                6
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p7.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal7"
+          />
+          <p class="texti">Suleiman Hassan</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Suleiman Hassan</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                7
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p8.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal8"
+          />
+          <p class="texti">Jimba Jamiu</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Jimba Jamiu</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                8
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p9.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal9"
+          />
+          <p class="texti">Alabi Fatimoh</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal9">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Alabi Fatimoh</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                9
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above structure for images 3 to 10 -->
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p10.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal10"
+          />
+          <p class="texti">Victoria Olasoji</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Victoria Olasoji</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                10
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue adding images and modals for each image -->
+        <div class="col-md-6">
+          <img
+            src="profiles/p11.jpg"
+            alt="Image 2"
+            class="img-fluid img-thumbnail"
+            data-toggle="modal"
+            data-target="#myModal11"
+          />
+          <p class="texti">Suliat Raheem Olayemi</p>
+        </div>
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="myModal11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Suliat Raheem Olayemi</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                11
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scrollable-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Scrollable Footer Images</h4>
+            <div
+              class="d-flex flex-nowrap"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <!-- Add your scrollable images here -->
+              <img src="logo1.jpg" style="height: 100px" alt="Image 1" />
+              <img src="logo2.jpg" alt="Image 2" style="height: 100px" />
+              <img src="logo.ico" alt="Image 3" height="100px" />
+
+              <!-- Add more images as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
